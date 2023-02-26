@@ -43,7 +43,7 @@
                             <td><?= $d["alamat"] ?></td>
                             <td>
                                 <a href="edit.php?id=<?php echo $d['id']; ?>" class="btn btn-success btn-sm">EDIT</a>
-                                <a href="hapus.php?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-sm">HAPUS</a>
+                                <a href="hapus.php?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?');">HAPUS</a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
